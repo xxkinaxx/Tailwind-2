@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
         if (window.scrollY > 0) {
-            navbar.classList.add('bg-gray-900');
+            navbar.classList.add('bg-gray-900/75');
+            navbar.classList.remove('bg-transparent');
         } else {
-            navbar.classList.remove('bg-gray-900');
+            navbar.classList.remove('bg-gray-900/75');
+            navbar.classList.add('bg-transparent');
         }
     });
 });
