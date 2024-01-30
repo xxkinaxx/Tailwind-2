@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind #2</title>
     <link rel="stylesheet" href="/src/public/style.css">
+    <link rel="stylesheet" href="/src/public/style2.css">
     <script src="https://kit.fontawesome.com/e81773e2de.js" crossorigin="anonymous"></script>
 </head>
 
@@ -69,9 +70,9 @@
                 yourself in a cutting-edge, futuristic world where the boundaries between reality and the digital realm
                 blur. Our platform offers an unparalleled journey into the metaverse, a space where endless
                 possibilities await.</p>
-            <button
-                class="py-3 px-5 mt-10 text-2xl bg-sky-600 hover:bg-blue-700 active:bg-sky-700 focus:outline-none focus:ring focus:ring-violet-300 text-white rounded-lg">Explore
-                Now <i class="fa-solid fa-angle-right"></i></button>
+            <button class="button mt-5">
+                <span>Explore Now <i class="fa-solid fa-angle-right"></i></span>
+            </button>
         </div>
     </div>
 
@@ -144,7 +145,7 @@
     <div class="p-10 bg-slate-950 text-center text-white">
         <h2 class="text-5xl font-bold">Meet our Team</h2>
         <div class="grid grid-cols-3">
-            <div class="bg-slate-900 p-5 md:p-8 lg:p-14 rounded-lg m-5">
+            <div class="bg-slate-900 p-5 md:p-8 lg:p-14 rounded-lg m-5 card">
                 <i class="fa-regular fa-user text-5xl md:text-7xl lg:text-9xl"></i>
                 <h2 class="mt-5 text-lg">Jenny Wilson</h2>
                 <p>Ui Ux Designer</p>
@@ -154,7 +155,7 @@
                     <a href="#"><i class="fa-brands fa-youtube text-xl md:text-2xl lg:text-4xl"></i></a>
                 </div>
             </div>
-            <div class="bg-slate-900 p-5 md:p-8 lg:p-14 rounded-lg m-5">
+            <div class="bg-slate-900 p-5 md:p-8 lg:p-14 rounded-lg m-5 card">
                 <i class="fa-regular fa-user text-5xl md:text-7xl lg:text-9xl"></i>
                 <h2 class="mt-5 text-lg">Jenny Wilson</h2>
                 <p>Ui Ux Designer</p>
@@ -164,7 +165,7 @@
                     <a href="#"><i class="fa-brands fa-youtube text-xl md:text-2xl lg:text-4xl"></i></a>
                 </div>
             </div>
-            <div class="bg-slate-900 p-5 md:p-8 lg:p-14 rounded-lg m-5">
+            <div class="bg-slate-900 p-5 md:p-8 lg:p-14 rounded-lg m-5 card">
                 <i class="fa-regular fa-user text-5xl md:text-7xl lg:text-9xl"></i>
                 <h2 class="mt-5 text-lg">Jenny Wilson</h2>
                 <p>Ui Ux Designer</p>
@@ -181,9 +182,14 @@
     <div class="bg-slate-900 px-20 py-40">
         <h2 class="text-white text-center text-3xl">Embark on a journey beyond reality. Metaverse Experience awaits—your
             gateway to a new dimension of possibilities. Start your adventure today!</h2>
-        <div class="mx-auto flex justify-center align-middle"><button
-                class="mx-auto py-3 px-5 mt-10 text-2xl bg-sky-600 hover:bg-blue-700 active:bg-sky-700 focus:outline-none focus:ring focus:ring-violet-300 text-white rounded-lg">Join
-                the Metaverse</button></div>
+        <div class="mx-auto flex justify-center align-middle mt-10">
+            <button class="join-button">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text bg-clip-text text-transparent bg-gradient-to-tr from-violet-700 to-sky-300">Join the Metaverse</span>
+            </button>
+        </div>
     </div>
 
     <!-- Footer -->
